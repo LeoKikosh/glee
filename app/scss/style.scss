@@ -3,8 +3,135 @@
 @import 'reset';
 @import 'global';
 
+// Styles for Header
+.header {
+  padding: 50px 0 54px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    margin-right: 14px;
+  }
+
+  &__text {
+    @extend %rubik-500;
+    color: $default;
+    font-size: 36px;
+    line-height: 58px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__link {
+    color: $default;
+    font-size: 15px;
+  }
+}
+
+.user-control {
+  display: flex;
+  justify-content: space-between;
+
+  &__search {
+    width: 58px;
+    border: none;
+    padding: 0;
+    background-color: #edf1f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 21px;
+  }
+
+  &__combination {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #fcd7b6;
+    border-radius: 25px;
+    margin-right: 21px;
+  }
+
+  &__heart {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin-right: 58px;
+    background-color: transparent;
+
+    & .user-control__img {
+      width: 18px;
+      height: 19px;
+    }
 
 
+    &::after {
+      content: '';
+      height: 32px;
+      width: 1px;
+      background-color: #fde7d3;
+      position: absolute;
+      right: -30px;
+      top: 0;
+    }
+  }
+
+  &__basket {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__num {
+    position: absolute;
+    top: 2px;
+    right: -10px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 18px;
+    color: #243f4d;
+  }
+
+  &__dots {
+    padding: 0;
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
 
 
 
