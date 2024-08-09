@@ -1,4 +1,11 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   line-height: 30px;
   color: $default;
@@ -6,10 +13,19 @@ body {
   font-weight: 500;
 }
 
-
+.main {
+  flex-grow: 1;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+a {
+  @extend %rubik;
+  font-weight: 500;
+  color: #7b7b7b;
+  line-height: 32px;
 }
