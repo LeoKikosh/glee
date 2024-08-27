@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
@@ -170,7 +171,7 @@
 
       </div>
     </div>
-    <div class="categories">
+    <section class="categories">
       <div class="container">
         <div class="categories__inner">
           <h2 class="title">
@@ -380,7 +381,7 @@
                   </a>
                 </div>
               </div>
-              <h4 class="categories-item__title">White chair</h4>
+              <h4 class="categories-item__title">White</h4>
               <span class="categories-item__price">$29.00</span>
             </div>
             <div class="categories-item">
@@ -414,7 +415,116 @@
         </div>
 
       </div>
+    </section>
+    <div class="promo">
+      <div class="container-xl">
+        <div class="promo__inner">
+          <div class="promo__item">
+            <img class="promo__img" src="images/promo-1.png" alt="promo image">
+            <h3 class="promo__title">
+              Mirum Notare Tellus
+            </h3>
+            <p class="promo__text">
+              LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+            </p>
+            <a class="promo__link" href="#">
+              View More
+            </a>
+          </div>
+          <div class="promo__item">
+            <img class="promo__img" src="images/promo-2.png" alt="promo image">
+            <h3 class="promo__title">
+              Malesuada Tempor
+              Euismod
+            </h3>
+            <p class="promo__text">
+              50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+            </p>
+            <a class="promo__link" href="#">
+              View More
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <section class="design-catalog">
+      <div class="container">
+        <div class="design-catalog__inner">
+          <h2 class="title">
+            New Design
+          </h2>
+          <ul class="design-catalog__menu">
+            <li class="design-catalog__menu-item design-catalog__menu-item--active">
+              <a class="design-catalog__menu-link" href="#">All</a>
+            </li>
+            <li class="design-catalog__menu-item">
+              <a class="design-catalog__menu-link" href="#">Furnitures </a>
+            </li>
+            <li class="design-catalog__menu-item">
+              <a class="design-catalog__menu-link" href="#">Chairs</a>
+            </li>
+            <li class="design-catalog__menu-item">
+              <a class="design-catalog__menu-link" href="#">Lighting</a>
+            </li>
+            <li class="design-catalog__menu-item">
+              <a class="design-catalog__menu-link" href="#">Decor</a>
+            </li>
+          </ul>
+          <div class="design-catalog__items">
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/1.jpg');">
+              <h3 class="design-catalog__item-title">
+                Beat Flat Pendant
+                Black
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/2.jpg');">
+              <h3 class="design-catalog__item-title">
+                Lampe Sur Pieds
+                Bamboo
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/3.jpg');">
+              <h3 class="design-catalog__item-title">
+                Rattan Rocking
+                Chair
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/4.jpg');">
+              <h3 class="design-catalog__item-title">
+                Rattan Rocking
+                Chair
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/5.jpg');">
+              <h3 class="design-catalog__item-title">
+                Rattan Rocking
+                Chair
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+            <div class="design-catalog__item" style="background-image: url('images/design-catalog/6.jpg');">
+              <h3 class="design-catalog__item-title">
+                Lampe Sur Pieds
+                Bamboo
+              </h3>
+              <span class="design-catalog__item-text">Classic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="video-popup" style="background-image: url('images/video-bg.jpg');">
+      <a class="video-popup__link" href="https://youtu.be/ABOle_eSq9c?si=Xxq8mq32yHK5BxRq" data-fancybox>
+        <img class="video-popup__img" src="images/icons/video-icon.png" alt="video icon">
+      </a>
+    </div>
+
+
   </main>
   <footer class="footer">
     <div class="container">
@@ -503,7 +613,9 @@
     </div>
   </footer>
 
-  <script src="js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="js/main.min.js">
+  </script>
 </body>
 
 </html>
