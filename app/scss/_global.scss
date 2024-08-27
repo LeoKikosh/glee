@@ -18,7 +18,14 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.container-xl {
+  max-width: 1770px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -28,4 +35,12 @@ a {
   font-weight: 500;
   color: #7b7b7b;
   line-height: 32px;
+}
+
+.title {
+  text-align: center;
+  @extend %dm-sans;
+  font-weight: 700;
+  color: $title;
+  margin-bottom: 35px;
 }
