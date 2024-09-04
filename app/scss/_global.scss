@@ -45,3 +45,30 @@ a {
   color: $title;
   margin-bottom: 35px;
 }
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item+.breadcrumbs__item::before {
+    position: absolute;
+    content: '/';
+    top: 1px;
+    left: -12px;
+    font-size: 14px;
+  }
+
+  &__link {
+    color: #737980;
+    transition: color .5s;
+  }
+
+  &__link:hover {
+    color: #387b99;
+  }
+}
