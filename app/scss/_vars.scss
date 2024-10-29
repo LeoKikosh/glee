@@ -8,3 +8,11 @@ $title:#191919;
 %rubik {
   font-family: "Rubik", sans-serif;
 }
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: rect(0 0 0 0);
+  position: absolute;
+}
