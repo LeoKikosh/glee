@@ -5,6 +5,12 @@ $(function () {
     ratedFill: "#ffcc00"
   });
 
+  $('.star-shop').rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00"
+  });
+
   $('.filter-price__input').ionRangeSlider({
       type: "double",
       prefix: "$",
